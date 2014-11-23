@@ -22,9 +22,13 @@ The `run_analysis.R` script does the following:
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+### Tidy Data's Variables
+
+All but the variable *activity* have the same name as the original raw data. `run_analysis.R` labels each *activity* by their name according to the original data's labeling.
+
 ### Outputted "tidy" Data 
 
-The `run_analysis.R` script writes a file titled `tidy_data.txt` to the working directory. Due to the ambiguity of part 5, I searched the course forums for interpretations of this wording. There were a variety of interpretations, but the one that made most to organize the data by subject, then by activity, and then take the mean of each subjects reading for each activity. 
+The `run_analysis.R` script writes a file titled `tidy_data.txt` to the working directory. Due to the ambiguity of part 5, I searched the course forums for interpretations of this wording. There were a variety of interpretations, but the one that made most to organize the data by *subject*, then by *activity*, and then take the mean of each subject's reading for each activity. 
 
 ### Considerations & Changes
 
