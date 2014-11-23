@@ -30,5 +30,6 @@ The `run_analysis.R` script writes a file titled `tidy_data.txt` to the working 
 Having learned quite a bit since the original draft of this script, I have a few things I would change if I were to write this over again.
 
 1. In lines 10 through 21, I would reorganize the column binding to place the *subject* column first, and the *activity* column second. 
-2. I would remove line 62, and instead create a variable that is increments after each run of the second for loop.
+2. I would remove line 62, and instead create a variable that is increments after each run of the second for loop. This was included to ensure the data was written properly, but is a bit overkill and not worth the extra computation.
 3. While the outputted file is indeed "tidy," I very much like the readability of *flat tables* using the `ftable` package. I did not include code that would output this as a *flat table* simply because there would be a trade off in usability.
+4. I have since learned a few methods to reduce the computations needed to complete the objectives.
